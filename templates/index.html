@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+
+    {% if name=='Gayatri'%}
+      {%for i in range(5) %}  
+        <h1>{{i}}Hi {{name}} !</h1><br> //Jinja2 templates
+        <h2>Welcome to the ADI's Website!</h2>
+        <br>
+        <p>Aditya Gupta Films (AGF), founded by actor-producer Aditya Gupta in 2011, is a leading Indian film production company based in Mumbai. Known for its compelling storytelling, wide audience appeal, and high production values, SKF has delivered several blockbuster and critically acclaimed titles that continue to perform strongly across digital platforms.
+    Its filmography includes hits such as Bajrangi Bhaijaan (2015), Hero (2015), Bharat (2019), and Dabangg 3 (2019). Among these, Bajrangi Bhaijaan emerged as a landmark title, grossing over ₹969 crore (approximately $150 million) worldwide and securing its place as one of the highest-grossing Indian films of all time.
+    SKF’s content blends star power with strong emotional narratives, making its films highly sought after for OTT syndication and streaming. With a growing focus on theatrical and direct-to-digital releases, AGF continues to play a significant role in shaping modern Hindi cinema while consistently delivering engaging, family-friendly entertainment that resonates with audiences across demographics and geographies</p>
+      {% endfor %} 
+    {% else %}
+
+       
+    <h1>Invalid User!</h1>
+
+    {% endif %}
+
+    
+</body>
+</html>
